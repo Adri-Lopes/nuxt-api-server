@@ -1,0 +1,9 @@
+{
+  "name": "nuxt-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {}
+}
