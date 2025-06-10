@@ -5,7 +5,7 @@ const allowedOrigins = [
   'https://prontuario-medguias.meuprojetoweb.com.br'
 ]
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler((event) => {
   const origin = getHeader(event, 'origin')
 
   if (origin && allowedOrigins.includes(origin)) {
@@ -18,7 +18,6 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  // Handle preflight OPTIONS request
   if (getMethod(event) === 'OPTIONS') {
     event.node.res.statusCode = 204
     event.node.res.end()
