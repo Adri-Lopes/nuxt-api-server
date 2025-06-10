@@ -6,7 +6,15 @@ export default {
     serveStatic: false,
     routeRules: {
       '/api/**': {
-        cors: true,  // Enable CORS on all /api routes
+        cors: {
+          origin: [
+            'http://localhost:3000',      // Your local development URL
+            'https://prontuario-medguias.meuprojetoweb.com.br'  // Your production URL
+          ],
+          methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+          credentials: true,
+          maxAge: 86400
+        }
       },
     },
   },
