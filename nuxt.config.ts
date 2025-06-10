@@ -1,15 +1,15 @@
 export default {
-  ssr: true, // or false if you want only the API
+  ssr: true,
 
   nitro: {
-    preset: 'node-server',
-    serveStatic: false,
+    preset: 'vercel', 
+
     routeRules: {
       '/api/**': {
         cors: {
           origin: [
-            'http://localhost:3000',      // Your local development URL
-            'https://prontuario-medguias.meuprojetoweb.com.br'  // Your production URL
+            'http://localhost:3000', 
+            'https://prontuario-medguias.meuprojetoweb.com.br'
           ],
           methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
           credentials: true,
