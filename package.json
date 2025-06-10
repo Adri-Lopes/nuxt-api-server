@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "build": "nuxt build",
     "start": "node .output/server/index.mjs"
   },
-  "dependencies": {}
+  "dependencies": {
+    "nuxt": "^3.0.0"
+  }
 }
