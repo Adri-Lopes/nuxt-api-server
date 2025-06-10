@@ -4,6 +4,11 @@ export default {
   nitro: {
     preset: 'node-server',
     serveStatic: false,
+    routeRules: {
+      '/api/**': {
+        cors: true,  // Enable CORS on all /api routes
+      },
+    },
   },
 
   runtimeConfig: {
