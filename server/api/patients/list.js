@@ -2,7 +2,7 @@ export default defineEventHandler(() => {
   return {
     success: true,
     message: "Lista de pacientes carregada com sucesso.",
-    total: 720,
+    total: 4,
     data: [
       {
         id: 1,

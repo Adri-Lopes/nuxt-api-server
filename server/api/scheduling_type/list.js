@@ -2,6 +2,7 @@ export default defineEventHandler(() => {
   return {
     success: true,
     message: "Lista de convênios carregada com sucesso.",
+    total: 3,
     data: [
       {
         id: 1,

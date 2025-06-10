@@ -1,7 +1,7 @@
 export default defineEventHandler((event) => {
     const id = event.context.params.id;
 
-    if (id === "1") {
+    if (id === "1" || id === "2" || id === "3" || id === "4") {
         return {
             success: true,
             message: "Paciente encontrado com sucesso.",
